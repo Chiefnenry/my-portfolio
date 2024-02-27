@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      
+    <!-- Contact Start -->
+         <div class="contact" id="contact">
+            <div class="content-inner">
+                <div class="content-header">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <p><i class="fa fa-user"></i>Omosegbon I Charles</p>
+                            <p><i class="fa fa-tag"></i>Web Designer & Developer</p>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:oluwaizminelinks@gmail.com">oluwaizminelinks@gmail.com</a></p>
+                            <p><i class="fa fa-phone"></i><a href="tel:+234-906-634-8212">+234-906-634-8212</a></p>
+                            <p><i class="fa fa-map-marker"></i>Road D23 Graceland Estate, Phase1, Oba Ile Ondo State, Nigeria</p>
+                            <div class="social">
+                                <a class="btn" href="https://x.com/chiefnenry"><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href="https://ng.linkedin.com/in/charles-omosegbon-7bb706298"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn" href="https://instagram.com/chief_nenry?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                                <a class="btn" href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form action="{% url "index" %}" method='POST'>
+                                {% csrf_token %}
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" name="email" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" name="messages" placeholder="Message"></textarea>
+                                </div>
+                                <div><button class="btn" name="message" type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- Contact End -->
+
+    </body>
+</html>
