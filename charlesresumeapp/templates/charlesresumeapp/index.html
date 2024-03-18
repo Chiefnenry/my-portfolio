@@ -65,7 +65,7 @@
                 </div>
                 <div class="sidebar-footer">
                     <a href="https://x.com/chiefnenry"><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
+                    <a class="btn" href="https://github.com/Chiefnenry"><i class="fab fa-github"></i></a>
                     <a href="https://ng.linkedin.com/in/charles-omosegbon-7bb706298"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                         <p>I'm</p>
                         <h1>Omosegbon I Charles</h1>
                         <h2></h2>
-                        <div class="typed-text">Web Designer, Web Developer, Front End Developer, Apps Developer, Graphic Designer</div>
+                        <div class="typed-text">Web Designer, Web Developer, Front End Developer, Back End Developer, Apps Developer</div>
                     </div>
                 </div>
                 <!-- Header End -->
@@ -186,20 +186,20 @@
                                     <span>10-July-2021 <i>to</i> 17-Aug-2023</span>
                                     <h3>Rizoka Nig Ltd</h3>
                                     <h4>Gudu, ABUJA</h4>
-                                    <h5>Senior Front-end Developer</h5>
+                                    <h5>Front-end Developer</h5>
                                     <p>It was a graet opportunity working with the organisation and great experience.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="exp-col">
                                     <span>06-June-2023 <i>to</i> 16-Dec-2023</span>
-                                    <h3>Sabi Programmer's ltd</h3>
+                                    <h3>Sabi Programmers</h3>
                                     <h4>Akure, Ondo State</h4>
-                                    <h5>Senior Back-End Tutor</h5>
+                                    <h5>Internship</h5>
                                     <p>I had time full of love and experience tutoring andimpacting to the next Tech developer in this organisation.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {% comment %} <div class="col-md-6">
                                 <div class="exp-col">
                                     <span>01-JMar-2023 <i>to</i> 30-Nov-2023</span>
                                     <h3>Rizoka Real-Estate Ltd</h3>
@@ -207,8 +207,8 @@
                                     <h5>Part-Time Graphic Design</h5>
                                     <p>Worked with this organisation as their Front-End Developer but with beautiful creativity they still got me as their Real Estate art time graphic design.</p>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+                            </div> {% endcomment %}
+                            {% comment %} <div class="col-md-6">
                                 <div class="exp-col">
                                     <span>01-July-2021 <i>to</i> 30-July-2022</span>
                                     <h3>Soft Agency</h3>
@@ -216,7 +216,7 @@
                                     <h5>Part-Time Apps Developer</h5>
                                     <p>Worked with this organisation through online and i am glad we got it all great, it was lovely working with them..</p>
                                 </div>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
@@ -250,13 +250,13 @@
                                     <p>WordPress is a popular content management system (CMS) that allows users to easily create and manage websites</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            {% comment %} <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-envelope-open-text"></i>
                                     <h3>Digital Marketing</h3>
                                     <p>Digital marketing is a dynamic and ever-evolving field that encompasses a wide range of online strategies and tactics to promote and sell products or services. </p>
                                 </div>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
@@ -281,23 +281,23 @@
                         <div class="row portfolio-container">
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
-                                    {% comment %} <figure>
-                                        <img src="{% static "myimages/e-com1.WEBP" %}" class="img-fluid" alt="">
-                                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Trading Platform" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="https://rizoka.ng/">E-commerce Web <span>Web Development</span></a>
-                                    </figure> {% endcomment %}
+                                    <figure>
+                                        <img src="{% static "myimages/rizoka.jpg" %}" class="img-fluid" alt="">
+                                        <a href="https://rizoka.ng/" data-lightbox="portfolio" data-title="Trading Platform" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://rizoka.ng/" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://rizoka.ng/">Trading Platform Website <span>Web Development</span></a>
+                                    </figure>
                                 </div>
                             </div>
 
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
-                                    {% comment %} <figure>
-                                        <img src="{% static "myimages/portfolio1.WEBP" %}" class="img-fluid" alt="">
-                                        <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Portfolio Website<span>Web Design</span></a>
-                                    </figure> {% endcomment %}
+                                    <figure>
+                                        <img src="{% static "myimages/CIO-Innovation-Logo.png" %}" class="img-fluid" alt="">
+                                        <a href="https://otp-input-sooty.vercel.app/" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a href="https://otp-input-sooty.vercel.app/" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                        <a class="portfolio-title" href="https://otp-input-sooty.vercel.app/">React OTP Project<span>Web Development</span></a>
+                                    </figure>
                                 </div>
                             </div>
 
@@ -477,7 +477,7 @@
         </div>
         
         <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <a href="index.html" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
         
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
